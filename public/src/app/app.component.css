@@ -1,0 +1,26 @@
+/* <*> Style resetter and Sample styles */
+
+* {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* <*> Replace with your own */
+.wrapper {
+    max-width: 900px;
+    margin:auto;
+    text-align: center;
+}
+
+.wrapper * {
+    margin-bottom: 20px;
+}
+
+h4 {
+    color:red;
+    font-size: 200%;
+}
+/* <*> sample styles end */

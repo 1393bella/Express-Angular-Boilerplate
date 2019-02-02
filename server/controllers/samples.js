@@ -34,13 +34,22 @@ module.exports = {
 
     createNewSample:(req,res)=>{
         // console.log('Creating a new one');
-        let sample = new Sample(req.body);
-        sample.save((err)=>{
-            if (err){res.json(err);}
-            //The message is optional, but helps
-            //maintain consistency. This way,
-            //all API calls return JSON
-            else {res.json({message:"Success"});}
+        Sample.find({sampleName:req.body.sampleName},(err,result)=>{
+            if (result.length){
+                console.log(result);
+                res.json({error:"An object with this name already exists"})
+            }
+            else {
+                let sample = new Sample(req.body);
+                sample.save((err)=>{
+                    if (err){res.json(err);}
+                    //The message is optional, but helps
+                    //maintain consistency. This way,
+                    //all API calls return JSON
+                    else {res.json({message:"Success"});}
+                })
+            }
+
         })
     },
 

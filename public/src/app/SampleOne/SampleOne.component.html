@@ -1,2 +1,7 @@
 <h3>Sample One</h3>
 <p *ngIf="result">{{result.dependents[0].sampleField}}</p>
+
+<form (submit)=searchSample()>
+    <input type="text" name="searchParam" [(ngModel)]="searchParam">
+    <button type="submit">Search</button>
+</form>

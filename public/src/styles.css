@@ -1,1 +1,59 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* <*> Style resetter and Sample styles */
+
+* {
+    margin: 0;
+    padding: 0; 
+    vertical-align: top;
+    box-sizing: border-box;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* <*> Replace with your own */
+body {
+    background-image: linear-gradient(121deg, #000000 28.57%, #2a2f57 28.57%, #2a2f57 50%, #000000 50%, #000000 78.57%, #2a2f57 78.57%, #2a2f57 100%);
+    background-size: 8.17px 13.59px;
+}
+
+.wrapper {
+    max-width: 900px;
+    min-height: 600px;
+    padding: 30px;
+    margin: 30px auto;
+    background-color: #2a2f57cb;
+    text-align: center;
+    border: 1px white solid;
+    border-radius: 5px;
+}
+
+.wrapper * {
+    margin-bottom: 20px;
+}
+
+form input{
+    color:black;
+    padding:7px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    font-size: 150%;
+    height: 50px;
+}
+
+button {
+    padding: 7px;
+    height:50px;
+    color:white;
+    background-color: rgb(54, 82, 130);
+    border-left: none;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    font-size: 150%;
+}
+
+h4 {
+    color:red;
+    font-size: 200%;
+}
+/* <*> sample styles end */

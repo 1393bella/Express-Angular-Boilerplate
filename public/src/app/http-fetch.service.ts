@@ -29,7 +29,7 @@ export class HttpFetchService {
     }
 
     updateSample(id,data){
-      return this._http.put('/api/samples/'+id+'/',data);
+      return this._http.post('/api/samples/'+id+'/',data);
     }
     deleteSample(id){
       return this._http.delete('/api/samples/'+id+'/');

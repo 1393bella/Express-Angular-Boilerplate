@@ -8,6 +8,7 @@ import { HttpFetchService } from '../http-fetch.service';
 })
 export class SampleOneComponent implements OnInit {
   result:any;
+  searchParam:string;
   constructor(private _http:HttpFetchService) { }
 
   ngOnInit() {
@@ -17,6 +18,9 @@ export class SampleOneComponent implements OnInit {
       this.result=data;
       console.log(this.result);
     })
+  }
+  searchSample(){
+    this.searchParam='';
   }
 
 }

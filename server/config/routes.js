@@ -27,7 +27,7 @@ module.exports = function(app){
         samples.createNewSample(req,res);
     });
 
-    app.put('/api/samples/:id',function(req,res){
+    app.post('/api/samples/:id',function(req,res){
         samples.updateOneSample(req,res);
     });
 
